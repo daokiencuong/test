@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --label-title-color: #08c
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+
+/* Review style */
+
+.reviews{
+    margin: 45px 45px 0px;
+}
+
+.reviews .label-title{
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--label-title-color);
+    border-bottom: 2px double var(--label-title-color);
+    padding-bottom: 8px;
+    margin: 15px 0px;
+}
+
+.reviews .title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.reviews .star_box{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+    flex-flow: row nowrap;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.reviews .star_box .star_box_left{
+    padding: 10px 20px;
+    margin: auto 0px ;
+}
+
+.reviews .star_box .star_box_left .rate_detail{
+    display: flex;
+    justify-content: space-between;
+    font-size: 48px;
+    color: #fe9727;
+    vertical-align: middle;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+
+.reviews .star_box .star_box_left .desc{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.reviews .star_box .star_box_center{
+    padding: 10px 20px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.reviews .star_box .star_box_center .review_row{
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.reviews .star_box .star_box_center .review_row .rating{
+    width: 370px;
+    height: 15px;
+    background-color: #eee;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 0px 10px;
+}
+
+.reviews .star_box .star_box_center .review_row:first-child .rating{
+    background-color: #f5a623;
+}
+
+.reviews .star_box .star_box_center .review_row .rate_label{
+    margin: 0px 1px;
+}
+
+.reviews .star_box .star_box_center .review_row .rate_percentage{
+    min-width: 150px;
+    color: #03a0e2;
+}
+
+.reviews .star_box .star_box_center .review_row .rate_percentage b{
+    font-weight: bold;
+}
+
+.reviews .star_box .star_box_right{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews .star_box .star_box_right .btn{
+    background-color: #03a0e2;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
